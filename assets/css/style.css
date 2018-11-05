@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+}
+  
+  body {
+    /* background-image: url("../../assets/images/bananas.png"); */
+
+    background-color: lightblue;
+
+    background-repeat: repeat;
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.header-wrapper
+{
+    margin: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 3px solid #cccccc;
+}
+
+header {
+    letter-spacing: 3px;
+    margin-top: 0;
+    margin-bottom:0;
+    margin-left: 50px;
+    margin-right:0;
+    padding-top: 10px;
+}
+
+
+.content-wrapper {
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.content-box {
+    max-width: 880px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    margin-top: 50px; 
+    padding: 10px 40px 10px 40px;
+    border: 1px solid #dddddd;
+}
+
+a {
+    color: #777777;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.tab {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 22px;
+    background-color: #4aaaa5;
+    color: #fff;
+    float:left;
+    padding: 25px 25px 25px 25px;
+}
+
+nav {
+    float: right;
+    height: 50px;
+    line-height: 50px;
+    padding-top: 20px;
+    padding-right: 20px;
+    text-align: right;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#bio {
+    float: left;
+    padding: 5px;
+    margin: 0 25px 20px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*-------------------------640px---------------------------*/
+
+/* On screens that are 640px wide or less, make the columns stack on top of each other instead of next to each other */
+
+/* -- lightgreen if the viewport is less than 640px wide -- */
+@media screen and (max-width: 640px) {
+    body {
+        background-color: lightgreen;
+    }
+    .header-wrapper, .content-wrapper, footer {
+        min-width: 320px;
+    }
+    .content-wrapper {
+        padding-left: 0;
+    }
+    header {
+        padding-top: 0; 
+        margin-left:0;
+    }
+    nav {
+        float: left;
+        line-height: 20px;
+    }
+    .column {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .tab {
+        background-color: #4aaaa5;
+        width: 100%;
+    }
+    #bio {
+        float: none;
+    }
+
+
+}
+
+/* -- lavender if the viewport is between 640px and 768px wide -- */
+@media screen and (min-width: 640px) and (max-width: 768px)  {
+    body {
+        background-color: lavender;
+    }
+    .header-wrapper, 
+    .content-wrapper, 
+    footer
+    {
+        padding-top: 0;
+        padding-left: 15px;
+    }
+    .content-wrapper {
+        margin: 0;
+    }
+    header {
+        max-width: 630px;
+        padding-top: 0;
+        margin: 0;
+    }
+   .content-box {
+        max-width: 630px;
+    }
+
+}
+
+/* -- lightgoldenrodyellow if the viewport is between 768px and 980px wide -- */
+@media screen and (min-width: 768px) and  (max-width: 980px) {
+    body {
+        background-color: lightgoldenrodyellow;
+    }
+    
+    header, 
+    .content-box, 
+    footer {
+        width: 650px;
+    }
+    .column {
+        width: 50%;
+    }
+    .content-wrapper {
+        margin: 0;
+        padding-left: 50px;
+    }
+
+}
+
+
+
+h1 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+}
+
+
+
+.footer-wrapper
+{
+    margin:0 auto;
+    width: 100%;
+    background-color: #666666;
+    border-top: 5px solid #4aaaa5;
+}
+
+.footer-yellow
+{
+    margin:0 auto;
+    width: 100%;
+    border-top: 2px solid yellow;
+}
+
+footer {
+    margin: 0 auto;
+    max-width: 880px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+/*-- CONTACT PAGE FORM STYLES --*/
+
+form, form div {
+    margin-bottom: 22px;
+}
+
+input, 
+textarea 
+{
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 2px;
+    color: #333;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    display: block;
+    float: none;
+    font-size: 16px;
+    border: 1px solid #eee;
+    padding: 6px 10px;
+    height: 38px;
+    width: 100%;
+    line-height: 1.3;
+}
+textarea 
+{
+    height: 200px;
+}
+
+button {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 18px;
+    background-color: #4aaaa5;
+    color: #fff;
+    padding: 25px 25px 25px 25px;
+}
+
+.item {
+    float: left;
+    position: relative;
+    margin: 10px;
+}
+
+.itemlabel {
+    position: absolute;
+    bottom: 20px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #4aaaa5;
+}
+
+.itemlabel a {
+    color: white;
+}
