@@ -3,9 +3,9 @@
 }
   
   body {
-    /* background-image: url("../../assets/images/bananas.png"); */
+    background-image: url("../../assets/images/bananas.png");
 
-    background-color: lightblue;
+    /* background-color: lightblue; */
 
     background-repeat: repeat;
     color: #777777;
@@ -103,9 +103,9 @@ nav {
 
 /* -- lightgoldenrodyellow if the viewport is between 768px and 980px wide -- */
 @media screen and (max-width: 980px) {
-    body {
+    /* body {
         background-color: lightgoldenrodyellow;
-    }
+    } */
     
     header, 
     .content-box, 
@@ -124,9 +124,9 @@ nav {
 
 /* -- lavender if the viewport is between 640px and 768px wide -- */
 @media screen and (max-width: 768px)  {
-    body {
+    /* body {
         background-color: lavender;
-    }
+    } */
     .header-wrapper, 
     .content-wrapper, 
     footer
@@ -150,9 +150,9 @@ nav {
 
 /* -- lightgreen if the viewport is less than 640px wide -- */
 @media screen and (max-width: 640px) {
-    body {
+    /* body {
         background-color: lightgreen;
-    }
+    } */
     .header-wrapper, 
     .content-wrapper, 
     footer {
@@ -189,8 +189,32 @@ nav {
     #bio {
         float: none;
     }
+}
 
-
+/* -- lightgrey if the viewport is less than 640px wide -- */
+@media screen and (max-width: 300px) {
+    /* body {
+        background-color: lightgrey;
+    } */
+    .header-wrapper, 
+    .content-box, 
+    .footer-wrapper {
+       min-width: 266px;
+    }
+    nav {
+        height: 25px;
+        line-height: 25px;
+        padding-top: 0;
+    }
+    h1 {
+        font-size: 16px;
+    }
+    .content-box {
+        margin-top:0;
+    }
+    .tab {
+        padding: 5px 5px 5px 5px;
+    }
 }
 
 h1 {
