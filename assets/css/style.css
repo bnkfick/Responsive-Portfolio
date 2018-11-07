@@ -3,9 +3,9 @@
 }
   
   body {
-    /* background-image: url("../../assets/images/bananas.png"); */
+    background-image: url("../../assets/images/bananas.png"); 
 
-    background-color: lightblue; 
+    /* background-color: lightblue;  */
 
     background-repeat: repeat;
     color: #777777;
@@ -155,7 +155,7 @@ nav {
 /* -- lightgreen if the viewport is less than 640px wide -- */
 @media screen and (max-width: 640px) {
     body {
-        background-color: lightgreen;
+        /* background-color: lightgreen; */
     } 
     .header-wrapper
     {
@@ -205,7 +205,7 @@ nav {
 /* -- lightgrey if the viewport is less than 640px wide -- */
 @media screen and (max-width: 300px) {
     body {
-        background-color: lightgrey;
+        /* background-color: lightgrey; */
     } 
     .header-wrapper {
         position: static;
