@@ -50,7 +50,7 @@ header {
     background-color:whitesmoke;
     background-color: rgba(255, 255, 255, 0.85); /* Black w/opacity/see-through */
     /*text-shadow: 1px 1px 1px black;*/
-    /*box-shadow: -2px -1px 1px #eee;*/
+
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border: 1px solid darkslategray;
@@ -64,6 +64,10 @@ header {
     margin-top: 150px; 
     padding: 10px 40px 10px 40px;
     border: 1px solid #dddddd;
+
+    -moz-box-shadow: 5px 5px 5px #eee;
+    -webkit-box-shadow: 5px 5px 5px #eee;
+    box-shadow: 5px 5px 5px #eee;
 }
 
 a {
@@ -79,6 +83,10 @@ a {
     color: #fff;
     float:left;
     padding: 25px 25px 25px 25px;
+
+    -moz-box-shadow: 3px 0px 5px #888888;
+    -webkit-box-shadow: 3px 0px 5px #888888;
+    box-shadow: 3px 0px 5px #888888;
 }
 
 nav {
