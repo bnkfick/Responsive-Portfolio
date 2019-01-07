@@ -2,14 +2,14 @@
     box-sizing: border-box;
 }
   
-  body {
-    background-image: url("../../assets/images/computer.jpg"); 
+body {
+    /* background-image: url("../../assets/images/computer.jpg");
     height: 100%; 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
     /* background-size: cover;       */
-    /* background-color: lightblue;  */
+    background-color: lightblue;  
     color: #777777;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -26,7 +26,10 @@
     margin: 0;
     width: 100%;
     background-color: #fff;
-    border-bottom: 3px solid #cccccc;
+
+    -moz-box-shadow: 1px 1px 1px #888888;
+    -webkit-box-shadow: 1px 1px 1px #888888;
+    box-shadow: 1px 1px 1px #888888;
 }
 
 header {
@@ -44,24 +47,19 @@ header {
     width: 100%;
     text-align: left;
     padding-left: 50px;
-
-    /*margin: 50px auto;*/
-    border:1px solid #0F224E;
     background-color:whitesmoke;
     background-color: rgba(255, 255, 255, 0.85); /* Black w/opacity/see-through */
+    /*margin: 50px auto;*/
     /*text-shadow: 1px 1px 1px black;*/
-
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border: 1px solid darkslategray;
-
+    /*border:1px solid #0F224E;*/
+    /* border: 1px solid darkslategray;*/
 }
 
 .content-box {
     max-width: 880px;
     background-color: #fff;
     margin-bottom: 50px;
-    margin-top: 150px; 
+    margin-top: 95px; 
     padding: 10px 40px 10px 40px;
     border: 1px solid #dddddd;
 
@@ -70,23 +68,27 @@ header {
     box-shadow: 5px 5px 5px #eee;
 }
 
+
+.tab {
+    font-size: 22px;
+    background-color: rgb(15, 34, 78);
+    color: #fff;
+    float:left;
+    padding: 25px 25px 25px 25px;
+    text-shadow: 1px 0px 1px #888888;
+    -moz-box-shadow: 3px 0px 5px #888888;
+    -webkit-box-shadow: 3px 0px 5px #888888;
+    box-shadow: 3px 0px 5px #888888;
+}
+
+.bar {
+    display: block;
+}
+
 a {
     color: #777777;
     text-decoration: none;
     font-size: 16px;
-}
-
-.tab {
-
-    font-size: 22px;
-    background-color: #0F224E;
-    color: #fff;
-    float:left;
-    padding: 25px 25px 25px 25px;
-
-    -moz-box-shadow: 3px 0px 5px #888888;
-    -webkit-box-shadow: 3px 0px 5px #888888;
-    box-shadow: 3px 0px 5px #888888;
 }
 
 nav {
@@ -94,9 +96,40 @@ nav {
     height: 50px;
     line-height: 50px;
     padding-top: 20px;
-    padding-right: 20px;
+    /*the padding on the right of the link, for when hovered over and background changes */
+    padding-right: 5px;
     text-align: right;
 }
+
+nav div.links { 
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right; 
+}
+nav div.bar { 
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    float: right; 
+    text-align:center;
+}
+nav div.links:hover {
+    /* nav div:hover a
+    background-color: #0F224E;
+    background-color: #E742B2; 
+    background-color: #B80F71;
+    color: #fff; */
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 2px solid #A2C6C6;
+}
+/* nav div.links:hover {
+    -moz-box-shadow: 2px 2px 2px #888888;
+    -webkit-box-shadow: 2px 2px 2px #888888;
+    box-shadow: 2px 2px 2px #888888;
+} */
+
+
 
 /* Create two equal columns that floats next to each other */
 .column {
@@ -111,17 +144,39 @@ nav {
     clear: both;
 }
 
+.contact {
+    margin: 0 auto;
+}
+
+.contact .bar {
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.street-address,
+.city-state-zip,
+.mobile-number,
+.email
+{
+    letter-spacing: 1.2px;
+    float:left;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.street-address,
+{
+    padding-left: 0px;
+}
+
+
 #bio {
     float: left;
     padding: 5px;
     margin: 0 25px 20px 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-/*-------------------------640px---------------------------*/
-
-/* On screens that are 640px wide or less, make the columns stack on top of each other instead of next to each other */
-
 
 .portfolio-img {
     height: 140px;
@@ -131,10 +186,10 @@ nav {
 
 /* -- lightgoldenrodyellow if the viewport is between 768px and 980px wide -- */
 @media screen and (max-width: 980px) {
-    /* body {
+     body {
         background-color: lightgoldenrodyellow;
-    } */
-    
+    } 
+
     header, 
     .content-box, 
     footer {
@@ -146,15 +201,22 @@ nav {
     .content-wrapper {
         margin: 0;
         padding-left: 50px;
-    }
-
+    }   
 }
 
 /* -- lavender if the viewport is between 640px and 768px wide -- */
 @media screen and (max-width: 768px)  {
-    /* body {
+     body {
         background-color: lavender;
-    } */
+    } 
+    nav div.links { 
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    nav div.links:hover { 
+        padding-left: 6px;
+        padding-right: 6px;
+    }
     .header-wrapper, 
     .content-wrapper, 
     footer
@@ -174,62 +236,134 @@ nav {
         max-width: 630px;
     }
 
+/*---------------------------*/
+
+
+    .header-wrapper, 
+    .content-wrapper, 
+    footer
+    {
+        padding-top: 0;
+        padding-left: 15px;
+    }
+    .content-wrapper {
+        margin: 0;
+    }
+    header {
+        max-width: 630px;
+        padding-top: 0;
+        margin: 0;
+    }
+   .content-box {
+        max-width: 630px;
+    }
 }
+
+/*-------------------------640px---------------------------*/
+
+/* On screens that are 640px wide or less, make the columns stack on top of each other instead of next to each other */
 
 /* -- lightgreen if the viewport is less than 640px wide -- */
 @media screen and (max-width: 640px) {
     body {
-        /* background-color: lightgreen; */
+         background-color: lightgreen; 
     } 
+ 
+    /* could be combined with .content-wrapper, footer */
     .header-wrapper
     {
+        /*An element with position: static; is not positioned in any special way; 
+        it is always positioned according to the normal flow of the page*/
         position: static;
-    }
-    .content-box {
-        margin-top: 20px; 
-    }
-    .header-wrapper, 
-    .content-wrapper, 
-    footer {
         width: 100%;
         max-width: 100%;
         padding-left: 0;
     }
-    .content-wrapper {
-        padding-left: 0;
-    }
-    .content-box {
-        max-width: 100%;
-    }
+
     header {
         max-width: 100%;
         padding-top: 0; 
         margin-left:0;
     }
+
     nav {
-        float: left;
+        height: 40px;
         line-height: 20px;
         padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
     }
+    /* Change div color and shadow */  
+    nav div { 
+        line-height: 20px;
+        padding-right: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /* background-color: #B80F71; 
 
+        -moz-box-shadow: 0px 5px 5px #888;
+        -webkit-box-shadow: 0px 5px 5px #888;
+        box-shadow: 0px 5px 5px #888;
+        text-shadow: 1px 0px 1px #888888;*/
+    } 
+    /* Make the navbar a single line, full width */
+    nav div.links { 
+        width: 33%;
+        float:left;
+        padding: 8px;
+    }
+    /* Make the last link slightly larger to avoid margin */  
+    nav div.links:last-child {
+        width: 34%;
+    }
+    /* Alter the links */  
+    nav div a { 
+        /*color: white;*/
+        font-size: 20px;
+    }
+    
+    /* tab/links stack */
     .column {
         width: 100%;
         margin: 0 auto;
         text-align: center;
     }
+    /* Name tab fills width so tab/links stack*/
     .tab {
-        background-color: #4A251E;
         width: 100%;
     }
+
+    /* ------------- */
+    .content-box {
+        margin-top: 20px; 
+    }
+    
+    .content-wrapper {
+        padding-left: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+    }
+    .content-box {
+        max-width: 100%;
+    }
+    /* ------------- */
+
     #bio {
         float: none;
     }
+    footer {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+    }
+
 }
 
 /* -- lightgrey if the viewport is less than 640px wide -- */
 @media screen and (max-width: 300px) {
     body {
-        /* background-color: lightgrey; */
+         background-color: lightgrey; 
     } 
     .header-wrapper {
         position: static;
@@ -249,6 +383,7 @@ nav {
     }
     h1 {
         font-size: 16px;
+        text-shadow: 2px 0px 3px #888888;
     }
     .content-box {
         margin-top:0;
@@ -260,6 +395,7 @@ nav {
 
 h1 {
     color: #0F224E;
+    text-shadow: 1px 0px 1px #888888;
 }
 
 
@@ -333,6 +469,15 @@ button {
     float: left;
     position: relative;
     margin: 10px;
+    border: solid 1px #888888;
+    -moz-box-shadow: 2px 2px 2px #888888;
+    -webkit-box-shadow: 2px 2px 2px #888888;
+    box-shadow: 2px 2px 2px #888888;
+}
+.item:hover {
+    -moz-box-shadow: 1px 1px 1px #888888;
+    -webkit-box-shadow: 1px 1px 1px #888888;
+    box-shadow: 1px 1px 1px #888888;
 }
 
 .itemlabel {

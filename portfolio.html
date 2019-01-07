@@ -1,4 +1,3 @@
-<!-- Layout without CSS Floats -->
 <!DOCTYPE html>
 <html lang="en-us">
 
@@ -8,22 +7,24 @@
 
     <title>Portfolio Barbara Fick</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
 </head>
 
 <body>
     <!-- Top Header  -->
     <div class="header-wrapper clearfix">
-        <header class=" row clearfix">
+        <header class="row clearfix">
             <div class="column">
                 <span class="tab">Barbara Fick</span>
             </div>
             <nav class="column">
-                <div>
-                    <a href="index.html">About</a> |
-                    <a href="portfolio.html">Portfolio</a> |
-                    <a href="contact.html">Contact</a>
-                </div>
+                <div class="links"><a href="index.html">About</a></div>
+    
+                <div class="links"><a href="portfolio.html">Portfolio</a></div> 
+
+                <div class="links"><a href="contact.html">Contact</a></div>
             </nav>
         </header>
     </div>
@@ -32,33 +33,76 @@
         <div class="content-box clearfix">
             <h1>Portfolio</h1>
             <hr />
-            12000 S. Stroll Lane, Parker Colorado 80138 | ph: 201.575.5673 | email:bnkfick@gmail.com  
+            <div class="contact clearfix">
+                <div class="street-address">12000 S. Stroll Lane,</div>
+                <div class="city-state-zip">Parker Colorado 80138</div>
+                <div class="bar">|</div>
+                <div class="mobile-number">201.575.5673</div>
+                <div class="bar">|</div>
+                <div class="email">bnkfick@gmail.com</div>  
+            </div>
             <hr />
             <!-- https://www.w3schools.com/howto/howto_css_image_text_blocks.asp -->
 
             <div class="item">
-                <a href="https://bnkfick.github.io/Word-Guess-Game/"><img class="portfolio-img" src="assets/images/wordgame.png" alt="Word Guess Game" />
-                <div class="itemlabel">Word Guess Game</div></a>
+                <a href="https://bnkfick.github.io/Word-Guess-Game/"><img class="portfolio-img" src="assets/images/wordgame.png"
+                        alt="Word Guess Game" />
+                    <div class="itemlabel">Word Guess Game</div>
+                </a>
             </div>
             <div class="item">
-                <a href="https://bnkfick.github.io/Crystal-Collector/"><img  class="portfolio-img" src="assets/images/crystalcollector.png" alt="Crystal Collector" />
-                <div class="itemlabel">Crystal Collector</div></a>
+                <a href="https://bnkfick.github.io/Crystal-Collector/"><img class="portfolio-img" src="assets/images/crystalcollector.png"
+                        alt="Crystal Collector" />
+                    <div class="itemlabel">Crystal Collector</div>
+                </a>
             </div>
             <div class="item">
-                <a href="https://bnkfick.github.io/Trivia-Game/"><img class="portfolio-img" src="assets/images/trivia.png" alt="Trivia" />
-                <div class="itemlabel">Trivia</div></a>
+                <a href="https://bnkfick.github.io/Trivia-Game/"><img class="portfolio-img" src="assets/images/trivia.png"
+                        alt="Trivia" />
+                    <div class="itemlabel">Trivia</div>
+                </a>
             </div>
             <div class="item">
-                <a href="https://bnkfick.github.io/Train-Scheduler/"><img class="portfolio-img" src="assets/images/trainscheduler.png" alt="Train Scheduler" />
-                <div class="itemlabel">Train Scheduler</div></a>
+                <a href="https://bnkfick.github.io/Train-Scheduler/"><img class="portfolio-img" src="assets/images/trainscheduler.png"
+                        alt="Train Scheduler" />
+                    <div class="itemlabel">Train Scheduler</div>
+                </a>
             </div>
             <div class="item">
-                <a href="https://bnkfick.github.io/GifTastic/"><img class="portfolio-img" src="assets/images/giphtastic.png" alt="Giftastic" />
-                <div class="itemlabel">Giftastic</div></a>
+                <a href="https://bnkfick.github.io/GifTastic/"><img class="portfolio-img" src="assets/images/giphtastic.png"
+                        alt="Giftastic" />
+                    <div class="itemlabel">Giftastic</div>
+                </a>
             </div>
             <div class="item">
-                <a href="https://bnkfick.github.io/BARB-Team-Project/"><img class="portfolio-img" src="assets/images/fourteeners.png" alt="14ers" />
-                <div class="itemlabel">14'ers</div></a>
+                <a href="https://bnkfick.github.io/BARB-Team-Project/"><img class="portfolio-img" src="assets/images/fourteeners.png"
+                        alt="14ers" />
+                    <div class="itemlabel">14'ers</div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="https://bnkfick.github.io/Liri/"><img class="portfolio-img" src="assets/images/liri-bot-screen.png"
+                        alt="Liri" />
+                    <div class="itemlabel">Liri Bot</div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="https://bnkfick.github.io/Bamazon/"><img class="portfolio-img" src="assets/images/bamazon.png"
+                        alt="Bamazon" />
+                    <div class="itemlabel">Bamazon</div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="https://salty-castle-84067.herokuapp.com/"><img class="portfolio-img" src="assets/images/friendfinder.png"
+                        alt="Friend Finder" />
+                    <div class="itemlabel">Friend Finder</div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="https://evening-beyond-72378.herokuapp.com/"><img class="portfolio-img" src="assets/images/DeliciousBurgers.png"
+                        alt="Delicious Burgers" />
+                    <div class="itemlabel">Delicious Burgers</div>
+                </a>
             </div>
 
         </div>

@@ -7,6 +7,7 @@
 
     <title>Barbara Fick</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -19,11 +20,11 @@
                 <span class="tab">Barbara Fick</span>
             </div>
             <nav class="column">
-                <div>
-                    <a href="index.html">About</a> |
-                    <a href="portfolio.html">Portfolio</a> |
-                    <a href="contact.html">Contact</a>
-                </div>
+                <div class="links"><a href="index.html">About</a></div>
+    
+                <div class="links"><a href="portfolio.html">Portfolio</a></div> 
+
+                <div class="links"><a href="contact.html">Contact</a></div>
             </nav>
         </header>
     </div>
@@ -33,7 +34,14 @@
             <h1>About Me</h1>
 
             <hr />
-            12000 S. Stroll Lane, Parker Colorado 80138 | ph: 201.575.5673 | email:bnkfick@gmail.com  
+            <div class="contact clearfix">
+                <div class="street-address">12000 S. Stroll Lane,</div>
+                <div class="city-state-zip">Parker Colorado 80138</div>
+                <div class="bar">|</div>
+                <div class="mobile-number">201.575.5673</div>
+                <div class="bar">|</div>
+                <div class="email">bnkfick@gmail.com</div>  
+            </div>
             <hr />
             <img id="bio" src="assets/images/bio_photo.jpg" alt="Barbara Fick Portrait" />
             <p>
@@ -42,7 +50,7 @@
             </p>
             <p>
                 The Denver University Coding Bootcamp will add relevant knowledge and new technologies — HTML, CSS,
-                Javascript, JQuery, Git, Heroku, MongoDB, Express, Node, React — to my skill set.
+                Javascript, JQuery, Git, Heroku, MongoDB, Express, React, Node — to my skill set.
             </p>
             <p>
                 I know what it takes to work in a team, meet a deadline and make it work.  My years as a programmer distinguishes me from other bootcamp graduates. 
