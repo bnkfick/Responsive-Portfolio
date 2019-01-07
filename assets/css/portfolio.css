@@ -3,31 +3,7 @@ body {
     background-image: url("../../assets/images/books.jpg"); 
 }
 
-.content-wrapper {
-    margin: 0;
-    width: 100%;
-    text-align: left;
-    padding-left: 50px;
-
-    /*margin: 50px auto;*/
-    border:1px solid #0F224E;
-    background-color:whitesmoke;
-    background-color: rgba(255, 255, 255, 0.85); /* Black w/opacity/see-through */
-    /*text-shadow: 1px 1px 1px black;*/
-
-    border: 1px solid darkslategray;
-
-}
-
 .content-box {
-    max-width: 880px;
+    max-width: 90%;
     background-color: rgba(255, 255, 255, 0.5); /* Black w/opacity/see-through */
-    margin-bottom: 50px;
-    margin-top: 150px; 
-    padding: 10px 40px 10px 40px;
-    border: 1px solid #dddddd;
-
-    -moz-box-shadow: 5px 5px 5px #eee;
-    -webkit-box-shadow: 5px 5px 5px #eee;
-    box-shadow: 5px 5px 5px #eee;
 }
