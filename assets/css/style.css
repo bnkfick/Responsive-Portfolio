@@ -3,13 +3,13 @@
 }
   
 body {
-    /* background-image: url("../../assets/images/computer.jpg");
+    background-image: url("../../assets/images/computer.jpg");
     height: 100%; 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
     /* background-size: cover;       */
-    background-color: lightblue;  
+    /* background-color: lightblue;  */
     color: #777777;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -186,9 +186,9 @@ nav div.links:hover {
 
 /* -- lightgoldenrodyellow if the viewport is between 768px and 980px wide -- */
 @media screen and (max-width: 980px) {
-     body {
+/*      body {
         background-color: lightgoldenrodyellow;
-    } 
+    }  */
 
     header, 
     .content-box, 
@@ -206,9 +206,9 @@ nav div.links:hover {
 
 /* -- lavender if the viewport is between 640px and 768px wide -- */
 @media screen and (max-width: 768px)  {
-     body {
+/*      body {
         background-color: lavender;
-    } 
+    }  */
     nav div.links { 
         padding-left: 8px;
         padding-right: 8px;
@@ -265,9 +265,9 @@ nav div.links:hover {
 
 /* -- lightgreen if the viewport is less than 640px wide -- */
 @media screen and (max-width: 640px) {
-    body {
+    /* body {
          background-color: lightgreen; 
-    } 
+    }  */
  
     /* could be combined with .content-wrapper, footer */
     .header-wrapper
@@ -362,9 +362,9 @@ nav div.links:hover {
 
 /* -- lightgrey if the viewport is less than 640px wide -- */
 @media screen and (max-width: 300px) {
-    body {
+/*     body {
          background-color: lightgrey; 
-    } 
+    }  */
     .header-wrapper {
         position: static;
     }
