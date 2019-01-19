@@ -150,8 +150,8 @@ nav div.links:hover {
 
 .contact .bar {
     float: left;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .street-address,
@@ -458,11 +458,26 @@ textarea
     height: 200px;
 }
 
+
+
 button {
-    font-size: 18px;
-    background-color: #0F224E;
-    color: #fff;
-    padding: 25px 25px 25px 25px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border: 2px solid #0F224E;
+    text-decoration: none;
+    color: #0F224E;
+}
+  
+button:hover {
+    background-color: #0F224E;;
+    color: #FFF;
 }
 
 .item {
