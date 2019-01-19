@@ -102,8 +102,10 @@ nav {
 }
 
 nav div.links { 
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
     float: right; 
 }
 nav div.bar { 
@@ -113,15 +115,22 @@ nav div.bar {
     float: right; 
     text-align:center;
 }
+
+
 nav div.links:hover {
     /* nav div:hover a
     background-color: #0F224E;
     background-color: #E742B2; 
     background-color: #B80F71;
     color: #fff; */
-    padding-left: 8px;
-    padding-right: 8px;
-    border: 2px solid #A2C6C6;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /*border: 2px solid #0F224E;*/
+}
+nav div.links a:hover {
+    color: #0F224E;
 }
 /* nav div.links:hover {
     -moz-box-shadow: 2px 2px 2px #888888;
@@ -189,7 +198,11 @@ nav div.links:hover {
 /*      body {
         background-color: lightgoldenrodyellow;
     }  */
-
+    nav div.links, nav div.links:hover { 
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
     header, 
     .content-box, 
     footer {
@@ -214,8 +227,9 @@ nav div.links:hover {
         padding-right: 8px;
     }
     nav div.links:hover { 
-        padding-left: 6px;
-        padding-right: 6px;
+        padding-left: 8px;
+        padding-right: 8px;
+        
     }
     .header-wrapper, 
     .content-wrapper, 
@@ -307,11 +321,13 @@ nav div.links:hover {
         text-shadow: 1px 0px 1px #888888;*/
     } 
     /* Make the navbar a single line, full width */
-    nav div.links { 
+    nav div.links, nav div.links:hover { 
         width: 33%;
         float:left;
         padding: 8px;
+        padding-top: 10px;
     }
+
     /* Make the last link slightly larger to avoid margin */  
     nav div.links:last-child {
         width: 34%;
